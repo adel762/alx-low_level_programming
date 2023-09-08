@@ -7,7 +7,7 @@
  *
  * Description: false or ture validation
  *
- * Return : 0 (success)
+ * Return: 0 (success)
 */
 int main(void)
 {
@@ -22,4 +22,5 @@ int main(void)
 	else
 		 printf("%i is negative\n", n);
 	return (0);
+}
 
