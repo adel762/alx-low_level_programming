@@ -7,7 +7,9 @@
  */
 int _abs(int n)
 {
-	if (n < 0)
-		n = (-1) * n;
+	if (n >= 0)
+	{
 		return (n);
+	}
+	return (-n);
 }
