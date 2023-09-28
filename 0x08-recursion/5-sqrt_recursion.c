@@ -2,7 +2,7 @@
 
 /**
  * _sqrt_recursion - print
- * @n: int nnumber
+ * @n: int number
  * Return: result
  */
 int _sqrt_recursion(int n)
