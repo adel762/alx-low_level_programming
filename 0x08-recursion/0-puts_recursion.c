@@ -1,8 +1,8 @@
 #include "main.h"
 
 /**
- * _put_recursion - print
- * @s: char
+ * _puts_recursion - prints a string
+ * @s: string to print
  */
 void _puts_recursion(char *s)
 {
@@ -12,5 +12,5 @@ void _puts_recursion(char *s)
 		return;
 	}
 	_putchar(*s);
-	_put_recursion(s + 1);
+	_puts_recursion(s + 1);
 }
