@@ -1,13 +1,13 @@
+#include <stdlib.h>
 #include "main.h"
-#include <stdlid.h>
 
 /**
- * _memset - fills
- * @s: char1
- * @b: char2
- * @n: int number
+ * *_memset - fills memory with a constant byte
+ * @s: memory area to be filled
+ * @b: char to copy
+ * @n: number of times to copy b
  *
- * Return: 0 or 1
+ * Return: pointer to the memory area s
  */
 char *_memset(char *s, char b, unsigned int n)
 {
@@ -17,29 +17,30 @@ char *_memset(char *s, char b, unsigned int n)
 	{
 		s[i] = b;
 	}
+
 	return (s);
 }
 
 /**
- * *_calloc - memory
- * @nmemb: int1
- * @size: int2
+ * *_calloc - allocates memory for an array
+ * @nmemb: number
+ * @size: size
  *
- * Return: 0
+ * Return: pointer
  */
 void *_calloc(unsigned int nmemb, unsigned int size)
 {
-	char *p;
+	char *ptr;
 
 	if (nmemb == 0 || size == 0)
 		return (NULL);
 
-	p = malloc(size * nmemb);
+	ptr = malloc(size * nmemb);
 
-	if (p == NULL)
+	if (ptr == NULL)
 		return (NULL);
 
-	_memset(p, 0, numemb * size);
+	_memset(ptr, 0, nmemb * size);
 
-	return (p);
+	return (ptr);
 }
