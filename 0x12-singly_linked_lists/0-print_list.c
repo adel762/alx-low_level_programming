@@ -1,5 +1,23 @@
 #include "lists.h"
 #include <stdio.h>
+
+/**
+ * str - int
+ * @s: char
+ *
+ * Return: int
+ */
+int str(char *s)
+{
+	int i = 0;
+
+	if (!s)
+		return (0);
+	while (*s++)
+		i++;
+	return (i);
+}
+
 /**
  * print_list - print all ele
  * @h: pointer
