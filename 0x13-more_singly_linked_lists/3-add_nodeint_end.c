@@ -2,7 +2,7 @@
 
 /**
  * add_nodeint_end - linked list
- * @head: pointer 
+ * @head: pointer
  * @n: int element
  *
  * Return: int
