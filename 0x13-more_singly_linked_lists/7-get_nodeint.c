@@ -1,7 +1,7 @@
 #include "lists.h"
 
 /**
- * get_nodeint_at_index - print 
+ * get_nodeint_at_index - print
  * @head: first
  * @index: index
  *
