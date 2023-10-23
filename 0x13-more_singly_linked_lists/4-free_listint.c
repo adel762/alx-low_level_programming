@@ -1,8 +1,8 @@
 #include "lists.h"
+
 /**
  * free_listint - linked list
- * @head: int 
- *
+ * @head: int
  */
 void free_listint(listint_t *head)
 {
