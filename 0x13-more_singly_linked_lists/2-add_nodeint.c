@@ -1,9 +1,9 @@
 #include "lists.h"
 
 /**
- * add_nodeint - print 
+ * add_nodeint - print
  * @head: pointer
- * @n: int 
+ * @n: int
  *
  * Return: 0 or 1
  */
