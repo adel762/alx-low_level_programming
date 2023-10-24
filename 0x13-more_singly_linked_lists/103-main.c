@@ -16,25 +16,25 @@ int main(void)
 
 	head2 = NULL;
 	add_nodeint(&head2, 0);
- 	add_nodeint(&head2, 1);
+	add_nodeint(&head2, 1);
 	add_nodeint(&head2, 2);
 	add_nodeint(&head2, 3);
 	add_nodeint(&head2, 4);
 	add_nodeint(&head2, 98);
 	add_nodeint(&head2, 402);
 	add_nodeint(&head2, 1024);
- 	print_listint_safe(head2);
-	node = find_listint_loop(head2);	
+	print_listint_safe(head2);
+	node = find_listint_loop(head2);
 	if (node != NULL)
 	{
-    	printf("Loop starts at [%p] %d\n", (void *)node, node->n);
+	printf("Loop starts at [%p] %d\n", (void *)node, node->n);
 	}
 	free_listint_safe(&head2);
 	head = NULL;
 	node = add_nodeint(&head, 0);
 	add_nodeint(&head, 1);
 	add_nodeint(&head, 2);
- 	add_nodeint(&head, 3);
+	add_nodeint(&head, 3);
 	add_nodeint(&head, 4);
 	add_nodeint(&head, 5);
 	add_nodeint(&head, 6);
@@ -46,8 +46,8 @@ int main(void)
 	node = find_listint_loop(head);
 	if (node != NULL)
 	{
-    	printf("Loop starts at [%p] %d\n", (void *)node, node->n);
+	printf("Loop starts at [%p] %d\n", (void *)node, node->n);
 	}
 	free_listint_safe(&head);
- 	return (0);
-	}
+	return (0);
+}
